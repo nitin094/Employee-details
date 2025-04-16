@@ -24,7 +24,6 @@ export class HomeComponent implements OnInit{
   }
   onDelete(id:any){
     if(confirm("Do you want to Delete?")){
-      // console.log("====")
       //delete Api called
       this.service.deleteEmpData(id)
       .subscribe((response)=>{
